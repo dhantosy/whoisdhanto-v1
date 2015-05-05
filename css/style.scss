@@ -1,0 +1,682 @@
+@import "../css/normalize.scss";
+@import "../css/foundation.min.css";
+@import "../css/popup.scss";
+
+/*************************
+GENERAL
+*************************/
+
+.transition-02 {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+h4 {
+  font-family: 'Roboto Slab', serif;
+}
+
+.banner-hero {
+  background-image: url("../img/banner.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 700px;
+  max-height: 900px;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  @media only screen and (max-width: 480px) {
+    min-height: 450px;
+  }
+  h3 {
+    color: #f5f5f5;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #000;
+    span {
+      @extend .transition-02;
+    }
+    .first:hover {
+      color: #EF4836;
+      cursor: default;
+    }
+    .second:hover {
+      color: #2ECC71;
+      cursor: default;
+    }
+    .third:hover {
+      color: #22A7F0;
+      cursor: default;
+    }
+    @media only screen and (max-width: 480px) {
+      font-size: 18px;
+    }
+  }
+}
+
+.row {
+  text-align: center;
+}
+
+i.fa.fa-angle-double-down.fa-4x {
+  margin-top: 20px;
+  color: #fff;
+  @extend .transition-02;
+  &:hover {
+    color: #95A5A6;
+  }
+  @media only screen and (max-width: 480px) {
+    margin-top: 5px;
+    font-size: 48px;
+  }
+}
+
+i.fa.fa-envelope-square.fa-3x {
+  color: #fff;
+  @extend .transition-02;
+  &:hover {
+    color: #ff9e2c;
+  }
+}
+
+i.fa.fa-instagram.fa-3x {
+  color: #fff;
+  @extend .transition-02;
+  &:hover {
+    color: #ff6b6b;
+  }
+}
+
+i.fa.fa-linkedin-square.fa-3x {
+  color: #fff;
+  @extend .transition-02;
+  &:hover {
+    color: #4ecdc4;
+  }
+}
+
+i.fa.fa-facebook-square.fa-3x {
+  color: #fff;
+  @extend .transition-02;
+  &:hover {
+    color: #3498db;
+  }
+}
+
+/*************************
+FOOTER
+*************************/
+
+.footer-hero {
+  background-color: #000000;
+  background-image: url("../img/footer-banner.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  //background-size: cover;
+  min-height: 700px;
+  max-height: 900px;
+  background-repeat: no-repeat;
+  @media only screen and (max-width: 480px) {
+    min-height: 550px;
+  }
+}
+
+.row-footer {
+  padding-top: 120px;
+  text-align: center;
+  @media only screen and (max-width: 480px) {
+    padding-top: 50px;
+  }
+}
+
+.row-footer h2 {
+  color: #f5f5f5;
+  font-family: 'Josefin Slab', serif;
+  margin-top: 25px;
+  text-shadow: 1px 1px 1px #000;
+  @media only screen and (max-width: 480px) {
+    margin-top: 0;
+  }
+}
+
+.large-6 {
+  float: center;
+}
+
+.panel.callout.radius h1 {
+  color: #F5F5F5;
+  font-family: 'Josefin Slab', serif;
+}
+
+.panel.callout.radius h4 {
+  color: #F5F5F5;
+  font-family: 'Josefin Slab', serif;
+}
+
+.panel.callout.radius {
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  border-style: none;
+}
+
+.inline-list {
+  position: relative;
+  overflow: visible;
+  float: left;
+  left: 50%;
+}
+
+.inline-list > li {
+  position: relative;
+  right: 50%;
+}
+
+.social {
+  margin-top: 20px;
+  text-align: center;
+}
+.social li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+/*************************
+LOGO PARALLAX
+*************************/
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10% 5% 5%;
+  @media only screen and (max-width: 480px) {
+    padding: 10% 15% 10%;
+  }
+}
+
+.scene {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: auto;
+}
+
+/*************************
+ACCORDION
+*************************/
+
+.accordion {
+  font-family: 'Roboto Slab', serif;
+  color: #323232;
+  dd > a {
+    font-size: 2em;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700;
+    text-align: center;
+    background-color: #F5F5F5;
+    @extend .transition-02;
+    @media only screen and (max-width: 480px) {
+      font-size: 1.3em;
+    }
+    &:hover {
+      background-color: #E0E0E0;
+    }
+  }
+}
+
+.accordion dd.active a {
+  background-color: white;
+  outline: none;
+}
+
+.container-about {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  p {
+    a {
+      color: #323232;
+      border-bottom: 1px dotted #323232;
+      @extend .transition-02;
+      &:hover {
+        color: #3498db;
+        border-bottom: 1px dotted #3498db;
+      }
+    }
+    @media only screen and (max-width: 480px) {
+      font-size: 14px;
+    }
+  }
+  
+}
+
+.container-skill {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container-gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  height: 300px;
+  position: relative;
+  padding: 0 50px;
+  @media only screen and (max-width: 480px) {
+    height: 200px;
+  }
+}
+
+#panel3 {
+  position: relative;
+}
+
+#panel4 {
+  padding-bottom: 50px;
+}
+
+.container-misc {
+  max-width: 920px;
+  margin: 0 auto;
+  text-align: center;
+  //min-height: 500px;
+}
+
+/*************************
+PROGRESS BAR
+*************************/
+
+.skill-list {
+  list-style: none;
+  margin: 0;
+  padding: 1em;
+}
+
+.skill {
+  margin-bottom: 1em;
+  position: relative;
+  background-color: #e3e3e3;
+  z-index: 1;
+  @media only screen and (max-width: 480px) {
+    margin-bottom: 5px;
+  }
+  h2 {
+    color: #fff;
+    font-size: 1.5em;
+    font-family: 'Josefin Slab', serif;
+    left: 1em;
+    top: 0.3em;
+    position: absolute;
+    @media only screen and (max-width: 480px) {
+      font-size: 1em;
+    }
+  }
+  &:hover .skill-1 {
+    background: #ff9e2c;
+  }
+  &:hover .skill-2 {
+    background: #4ecdc4;
+  }
+  &:hover .skill-3 {
+    background: #ff6b6b;
+  }
+  &:hover .skill-4 {
+    background: #3498db;
+  }
+  &:hover .skill-5 {
+    background: #9b59b6;
+  }
+  &:hover .skill-6 {
+    background: #019875;
+  }
+}
+
+.skill-1 {
+  background: #323232;
+  height: 45px;
+  width: 0%;
+  max-width: 100%;
+  -webkit-animation: progress1 2s 1 forwards;
+  -moz-animation: progress1 2s 1 forwards;
+  -ms-animation: progress1 2s 1 forwards;
+  animation: progress1 2s 1 forwards;
+  @extend .transition-02;
+  @media only screen and (max-width: 480px) {
+    height: 35px;
+  }
+}
+
+@-webkit-keyframes progress1 { 
+  from { }
+  to { width: 80% }
+}
+
+@-moz-keyframes progress1 { 
+  from { }
+  to { width: 80% }
+}
+
+@-ms-keyframes progress1 { 
+  from { }
+  to { width: 80% }
+}
+
+@keyframes progress1 { 
+  from { }
+  to { width: 80% }
+}
+
+.skill-2 {
+  background: #323232;
+  height: 45px;
+  width: 0%;
+  max-width: 100%;
+  -webkit-animation: progress2 2s 1 forwards;
+  -moz-animation: progress2 2s 1 forwards;
+  -ms-animation: progress2 2s 1 forwards;
+  animation: progress2 2s 1 forwards;
+  @extend .transition-02;
+  @media only screen and (max-width: 480px) {
+    height: 35px;
+  }
+}
+
+@-webkit-keyframes progress2 { 
+  from { }
+  to { width: 85% }
+}
+
+@-moz-keyframes progress2 { 
+  from { }
+  to { width: 85% }
+}
+
+@-ms-keyframes progress2 { 
+  from { }
+  to { width: 85% }
+}
+
+@keyframes progress2 { 
+  from { }
+  to { width: 85% }
+}
+
+.skill-3 {
+  background: #323232;
+  height: 45px;
+  width: 0%;
+  max-width: 100%;
+  -webkit-animation: progress3 2s 1 forwards;
+  -moz-animation: progress3 2s 1 forwards;
+  -ms-animation: progress3 2s 1 forwards;
+  animation: progress3 2s 1 forwards;
+  @extend .transition-02;
+  @media only screen and (max-width: 480px) {
+    height: 35px;
+  }
+}
+
+@-webkit-keyframes progress3 { 
+  from { }
+  to { width: 35% }
+}
+
+@-moz-keyframes progress3 { 
+  from { }
+  to { width: 35% }
+}
+
+@-ms-keyframes progress3 { 
+  from { }
+  to { width: 35% }
+}
+
+@keyframes progress3 { 
+  from { }
+  to { width: 35% }
+}
+
+.skill-4 {
+  background: #323232;
+  height: 45px;
+  width: 0%;
+  max-width: 100%;
+  -webkit-animation: progress4 2s 1 forwards;
+  -moz-animation: progress4 2s 1 forwards;
+  -ms-animation: progress4 2s 1 forwards;
+  animation: progress4 2s 1 forwards;
+  @extend .transition-02;
+  @media only screen and (max-width: 480px) {
+    height: 35px;
+  }
+}
+
+@-webkit-keyframes progress4 { 
+  from { }
+  to { width: 80% }
+}
+
+@-moz-keyframes progress4 { 
+  from { }
+  to { width: 80% }
+}
+
+@-ms-keyframes progress4 { 
+  from { }
+  to { width: 80% }
+}
+
+@keyframes progress4 { 
+  from { }
+  to { width: 80% }
+}
+
+.skill-5 {
+  background: #323232;
+  height: 45px;
+  width: 0%;
+  max-width: 100%;
+  -webkit-animation: progress5 2s 1 forwards;
+  -moz-animation: progress5 2s 1 forwards;
+  -ms-animation: progress5 2s 1 forwards;
+  animation: progress5 2s 1 forwards;
+  @extend .transition-02;
+  @media only screen and (max-width: 480px) {
+    height: 35px;
+  }
+}
+
+@-webkit-keyframes progress5 { 
+  from { }
+  to { width: 70% }
+}
+
+@-moz-keyframes progress5 { 
+  from { }
+  to { width: 70% }
+}
+
+@-ms-keyframes progress5 { 
+  from { }
+  to { width: 70% }
+}
+
+@keyframes progress5 { 
+  from { }
+  to { width: 70% }
+}
+
+.skill-6 {
+  background: #323232;
+  height: 45px;
+  width: 0%;
+  max-width: 100%;
+  -webkit-animation: progress6 2s 1 forwards;
+  -moz-animation: progress6 2s 1 forwards;
+  -ms-animation: progress6 2s 1 forwards;
+  animation: progress6 2s 1 forwards;
+  @extend .transition-02;
+  @media only screen and (max-width: 480px) {
+    height: 35px;
+  }
+}
+
+@-webkit-keyframes progress6 { 
+  from { }
+  to { width: 65% }
+}
+
+@-moz-keyframes progress6 { 
+  from { }
+  to { width: 65% }
+}
+
+@-ms-keyframes progress6 { 
+  from { }
+  to { width: 65% }
+}
+
+@keyframes progress6 { 
+  from { }
+  to { width: 65% }
+}
+
+
+/*************************
+SLIDERS
+*************************/
+
+.portfolio-slider {
+  max-width: 1200px;
+}
+
+.swiper-slide {
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  a {
+    filter: gray; /* IE6-9 */
+    filter: grayscale(1); /* Firefox 35+ */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    color: #323232;
+    @extend .transition-02;
+    &:hover {
+      color: #3498db;
+      filter: none;
+      -webkit-filter: grayscale(0);
+    }
+    @media only screen and (max-width: 480px) {
+      filter: none;
+      -webkit-filter: grayscale(0);
+      font-size: 14px;
+    }
+  }
+}
+
+.nav-slide {
+  color: #323232;
+  font-size: 40px;
+  cursor: pointer;
+  color:rgba(255, 255, 255, 0.64);
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.nav-slide:hover{
+  color: #323232;
+}
+
+.nav-slide .prev{
+  color: #323232;
+  left: -10px;
+  position: absolute;
+  z-index: 99;
+  bottom: 55%;
+  height: 50px;
+  width: 50px;
+  padding-top: 10px;
+  opacity: 1;
+  visibility: visible;
+  &.hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.nav-slide .next{
+  color: #323232;
+  right: -10px;
+  position: absolute;
+  z-index: 99;
+  bottom: 55%;
+  height: 50px;
+  width: 50px;
+  padding-top: 10px;
+  opacity: 1;
+  visibility: visible;
+  &.hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/*************************
+POPUP
+*************************/
+
+.mfp-bottom-bar {
+  margin-top: -40px;
+  background: #444;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.mfp-title {
+  text-align: center;
+}
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  @extend .transition-02;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+  opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+
+/*************************
+INSTAFEED
+*************************/
+
+#instafeed {
+  a {
+    filter: gray; /* IE6-9 */
+    filter: grayscale(1); /* Firefox 35+ */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    border: 1px solid #fff;
+    display: inline-block;
+    @extend .transition-02;
+    &:hover {
+      filter: none;
+      -webkit-filter: grayscale(0);
+    }
+  }
+}
+
+
