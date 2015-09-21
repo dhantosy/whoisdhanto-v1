@@ -12,8 +12,8 @@ $(document).ready(function(){
   // Parallax Scroll function
   function parallaxScroll(){
     var scrolledY = $(window).scrollTop();
-    $('.footer-hero').css('background-position','center -'+((scrolledY*0.2))+'px');
-    $('.banner-hero').css('background-position','center -'+((scrolledY*0.2))+'px');
+    //$('.footer-hero').css('background-position','center -'+((scrolledY*0.2))+'px');
+    $('.banner-hero').css('background-position','center -'+((scrolledY*0.3))+'px');
   };
 
   if ($(window).width() > 768 ) {
@@ -77,7 +77,7 @@ $(document).ready(function(){
   });
 
   // Arrow in banner hero
-  $(".fa-angle-double-down").click(function(){
+  $(".fa-angle-down").click(function(){
     $('body,html').animate({scrollTop:
       $("#info").offset().top
     }, 750);

@@ -14,15 +14,14 @@ GENERAL
 }
 
 h4 {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Raleway', serif;
 }
 
 .banner-hero {
-  background-image: url("../img/banner.png");
   background-attachment: fixed;
-  background-position: center;
+  background-position: 50% 0;
   background-size: cover;
-  min-height: 700px;
+  min-height: 785px;
   max-height: 900px;
   background-color: #000000;
   background-repeat: no-repeat;
@@ -31,9 +30,11 @@ h4 {
   }
   h3 {
     color: #f5f5f5;
-    font-family: 'Josefin Slab', serif;
-    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     text-shadow: 1px 1px 1px #000;
+    text-rendering: inherit;
+    letter-spacing: 1.5px;
     span {
       @extend .transition-02;
     }
@@ -59,7 +60,7 @@ h4 {
   text-align: center;
 }
 
-i.fa.fa-angle-double-down.fa-4x {
+i.fa.fa-angle-down.fa-4x {
   margin-top: 20px;
   color: #fff;
   @extend .transition-02;
@@ -109,7 +110,7 @@ FOOTER
 *************************/
 
 .footer-hero {
-  background-color: #000000;
+  background-color: #fff;
   background-image: url("../img/footer-banner.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -133,8 +134,10 @@ FOOTER
 
 .row-footer h2 {
   color: #f5f5f5;
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1.5px;
   margin-top: 25px;
+  font-weight: 300;
   text-shadow: 1px 1px 1px #000;
   @media only screen and (max-width: 480px) {
     margin-top: 0;
@@ -147,12 +150,12 @@ FOOTER
 
 .panel.callout.radius h1 {
   color: #F5F5F5;
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Raleway', serif;
 }
 
 .panel.callout.radius h4 {
   color: #F5F5F5;
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Raleway', serif;
 }
 
 .panel.callout.radius {
@@ -189,9 +192,9 @@ LOGO PARALLAX
 .container {
   max-width: 600px;
   margin: 0 auto;
-  padding: 10% 5% 5%;
+  padding: 7% 5% 5%;
   @media only screen and (max-width: 480px) {
-    padding: 10% 15% 10%;
+    padding: 7% 15% 10%;
   }
 }
 
@@ -209,14 +212,15 @@ ACCORDION
 *************************/
 
 .accordion {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Raleway', serif;
   color: #323232;
   dd > a {
     font-size: 2em;
-    font-family: 'Josefin Slab', serif;
+    font-family: 'sfns_displaythin', serif;
     font-weight: 700;
     text-align: center;
-    background-color: #F5F5F5;
+    background-color: #fff;
+    letter-spacing: 2.2px;
     @extend .transition-02;
     @media only screen and (max-width: 480px) {
       font-size: 1.3em;
@@ -307,13 +311,13 @@ PROGRESS BAR
   }
   h2 {
     color: #fff;
-    font-size: 1.5em;
-    font-family: 'Josefin Slab', serif;
+    font-size: 1.2em;
+    font-family: 'Raleway', serif;
     left: 1em;
     top: 0.3em;
     position: absolute;
     @media only screen and (max-width: 480px) {
-      font-size: 1em;
+      font-size: 0.9em;
     }
   }
   &:hover .skill-1 {
@@ -337,7 +341,7 @@ PROGRESS BAR
 }
 
 .skill-1 {
-  background: #323232;
+  background: #ff9e2c;
   height: 45px;
   width: 0%;
   max-width: 100%;
@@ -372,7 +376,7 @@ PROGRESS BAR
 }
 
 .skill-2 {
-  background: #323232;
+  background: #4ecdc4;
   height: 45px;
   width: 0%;
   max-width: 100%;
@@ -407,7 +411,7 @@ PROGRESS BAR
 }
 
 .skill-3 {
-  background: #323232;
+  background: #ff6b6b;
   height: 45px;
   width: 0%;
   max-width: 100%;
@@ -442,7 +446,7 @@ PROGRESS BAR
 }
 
 .skill-4 {
-  background: #323232;
+  background: #3498db;
   height: 45px;
   width: 0%;
   max-width: 100%;
@@ -477,7 +481,7 @@ PROGRESS BAR
 }
 
 .skill-5 {
-  background: #323232;
+  background: #9b59b6;
   height: 45px;
   width: 0%;
   max-width: 100%;
@@ -512,7 +516,7 @@ PROGRESS BAR
 }
 
 .skill-6 {
-  background: #323232;
+  background: #019875;
   height: 45px;
   width: 0%;
   max-width: 100%;
@@ -560,19 +564,12 @@ SLIDERS
   height: 200px;
   background-color: transparent;
   a {
-    filter: gray; /* IE6-9 */
-    filter: grayscale(1); /* Firefox 35+ */
-    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
     color: #323232;
     @extend .transition-02;
     &:hover {
       color: #3498db;
-      filter: none;
-      -webkit-filter: grayscale(0);
     }
     @media only screen and (max-width: 480px) {
-      filter: none;
-      -webkit-filter: grayscale(0);
       font-size: 14px;
     }
   }

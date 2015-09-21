@@ -4,18 +4,20 @@
 ?>
 
 
-<div class="banner-hero">
+<div class="banner-hero" style="background-image: url('img/rotate/rotate.php');">
   <div class="row">
     <div id="container" class="container">
       <ul id="scene" class="scene">
-        <li class="layer" data-depth="0.80"><img src="img/0.png"></li>
-        <li class="layer" data-depth="0.65"><img src="img/1.png"></li>
-        <li class="layer" data-depth="0.40"><img src="img/3.png"></li>
-        <li class="layer" data-depth="0.30"><img src="img/2.png"></li>
+      <li class="layer" data-depth="0.60"><img src="img/2.png"></li>
+        <li class="layer" data-depth="0.30"><img src="img/1.png"></li>
+        
+        
+        <li class="layer" data-depth="0.10"><img src="img/0.png"></li>
+        <!-- <li class="layer" data-depth="0.30"><img src="img/2.png"></li> -->
       </ul>
     </div>
-      <h3><span class="first">WEB DEVELOPER</span> | <span class="second">DESIGNER</span> | <span class="third">SEO</span></h3>
-      <a href="#info"><i class="fa fa-angle-double-down fa-4x"></i></a>
+      <h3>FRONT END DEVELOPER &amp; UX DESIGNER</h3>
+      <a href="#info"><i class="fa fa-angle-down fa-4x"></i></a>
   </div>
 </div>
 

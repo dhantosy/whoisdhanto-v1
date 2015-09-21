@@ -35,10 +35,8 @@
     <meta property="og:site_name" content="DSY" />
     <meta property="og:type" content="website" />
 
-    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Roboto+Slab' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway|Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     
 
   </head>
