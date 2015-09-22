@@ -8,10 +8,8 @@
   <div class="row">
     <div id="container" class="container">
       <ul id="scene" class="scene">
-      <li class="layer" data-depth="0.60"><img src="img/2.png"></li>
+        <li class="layer" data-depth="0.60"><img src="img/2.png"></li>
         <li class="layer" data-depth="0.30"><img src="img/1.png"></li>
-        
-        
         <li class="layer" data-depth="0.10"><img src="img/0.png"></li>
         <!-- <li class="layer" data-depth="0.30"><img src="img/2.png"></li> -->
       </ul>
